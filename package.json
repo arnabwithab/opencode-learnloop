@@ -4,15 +4,18 @@
   "description": "Learn from your OpenCode sessions: extracts repeated corrections and proposes AGENTS.md improvements for human review",
   "type": "module",
   "license": "MIT",
+  "main": "./src/index.js",
   "exports": {
-    ".": "./src/index.js"
+    ".": "./src/index.js",
+    "./tui": "./src/tui.js"
   },
   "files": [
     "src",
+    "tui.js",
     "README.md",
     "LICENSE"
   ],
   "dependencies": {
-    "@opencode/plugin": "latest"
+    "@opencode/plugin": "^2.1.4"
   }
 }
